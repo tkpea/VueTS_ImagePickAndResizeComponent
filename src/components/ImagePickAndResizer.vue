@@ -36,8 +36,8 @@ import { base64ToFile } from 'image-to-file-converter';
 export default class ImagePicker extends Vue {
   
   /** Props */
-  @Prop({ type: Blob})
-  value: Blob
+  @Prop({ type: Object})
+  value: Object
 
   @Prop({ type: Number, default: null })
   maxLength: Number
